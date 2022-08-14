@@ -1,14 +1,180 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
-</head>
-<body>
-    @@include('_header.html')
-    <script type="text/javascript" src="js/script.min.js"></script>
-</body>
-</html>
+@@include('_header.html')
+<header class="header">
+	<div class="container">
+	<nav class="header__inner">
+		<!-- BURGER -->
+		<div class="header__burger" id="burger">
+			<div class="burger__field">
+			  <span class="burger__inner"></span>
+              <span class="burger__inner"></span>
+              <span class="burger__inner"></span>
+            </div> 
+		</div>
+		<!-- Навигация 1 -->
+		<div class="nav__list" id="menu">
+			<a href="#" class="nav__link">Home</a>
+			<a href="#" class="nav__link">About</a>
+			<a href="#" class="nav__link">Team</a>
+			<a href="#" class="nav__link">Booking</a>
+		</div>
+			<div class="header__logo" id="logo">
+			<img src="img/logo.png">
+			</div>
+		<div class="nav__list" id="menu2">
+			<a href="#" class="nav__link">Menu</a>
+			<a href="#" class="nav__link">Galerie</a>
+			<a href="#" class="nav__link">Events</a>
+			<a href="#" class="nav__link">Contact</a>
+		</div>
+		<div class="popup" id="popup">
+		</div>	
+	</nav>
+	</div>
+</header>
+		<!-- Заголовки -->
+<div class="intro">
+	<div class="container">
+			<div class="intro__inner" id="intro">
+				<h2 class="intro__suptitle">RESTAURANT</h2>
+				<h1 class="intro__title">FANCY SAILOR</h1>
+				<div class="buttons">
+						<a href="#" class="btn">BOOK TABLE</a>
+						<a href="#" class="btn">EXPLORE</a>
+				</div>
+		</div>
+	</div>
+</div>
+<!-- Новый раздел -->
+<section class="about__section">
+	<div class="container">
+		<!-- Заголовки с картинкой -->
+		<div class="about__section__header">
+			<div class="about__titles">
+				<h2 class="about__title">ABOUT US</h2>
+				<h3 class="about__suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+				velit maximus, molestie esta, tempor magna.</h3>
+				<br>
+				<h4 class="about__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non<br>
+				ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a <br>sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla<br> facilisis semper laoreet.</h4>
+			</div>
+			<div class="about__img">
+				<img src="img/about-img.png" class="img__shadow"alt="">
+			</div>
+		</div>
+		<!-- Форма с расчетом -->
+		<div class="about__booking">
+			<div class="booking__img">
+				<img src="img/clock.png"  class="img__shadow" alt="">
+			</div>
+			<div class="booking__form">
+				<h2 class="booking__title">BOOK A TABLE</h2>
+				<form action="#" class="booking__form__inner">
+					<p class="form__block">
+						<input type="text" class="field__set" placeholder="Name">
+						<input type="email" class="field__set" placeholder="Email">
+					</p>
+					<p class="form__block">
+						<input type="text" class="field__set" placeholder="Phone">
+						<select name="country" class="field__set" placeholder="People">
+							<option value="" disabled selected style='display:none;'>People</option>
+		    			     <option>1</option>
+						     <option>2</option>
+						     <option>3</option>
+						     <option>4</option>
+						     <option>5</option>
+						     <option>6</option>
+					     </select>
+					</p>
+					<p class="form__block">
+						<input type="text" class="field__set" placeholder="Date (mm/dd)">
+						 <select name="time" class="field__set" placeholder="Time">
+						 	<option value="" disabled selected style='display:none;'>Time</option>
+		    			     <option>9:00</option>
+						     <option>9:30</option>
+						     <option>10:00</option>
+						     <option>10:30</option>
+						     <option>11:00</option>
+						     <option>11:30</option>
+						     <option>12:00</option>
+						     <option>12:30</option>						    
+						     <option>13:00</option>
+						     <option>13:30</option>
+						     <option>14:00</option>
+						     <option>14:30</option>
+						     <option>15:00</option>
+						     <option>15:30</option>
+						     <option>16:00</option>
+						     <option>16:30</option>
+						     <option>17:00</option>
+						     <option>17:30</option>
+						     <option>18:00</option>
+						     <option>18:30</option>
+					     </select>
+
+					</p>
+					<input type="button" class="booking__button" value="BOOK NOW">
+				</form>
+			</div>
+		</div>
+
+		<!-- Подпись в конце окна -->
+		<div class="subscription">
+			<h4 class="subscription__inner">
+				Mon - Fri: <B>8PM - 10PM</B>, Sat - Sun: <B>8PM - 3AM</B>, Phone: <B>+40 729 131 637/+40 726 458 782</B>
+			</h4>
+		</div>
+	</div>
+</section>
+<!-- Новая секция Specialties -->
+<section class="specialties__section">
+	<div class="container">
+		<div class="specialties__header">
+			<h2 class="specialties__title__header">
+				SPECIALTIES
+			</h2>
+		</div>
+		<div class="specialties__inner">
+			<!-- Заголовки с картинкой -->
+			<div class="specialties__img">
+				<img src="img/cake.jpg" alt="">
+			</div>
+			<div class="specialties__titles">
+				<h2 class="specialties__title">CHOCOLATE PANCAKES</h2>
+				<h3 class="specialties__suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+				velit maximus, molestie esta, tempor magna.</h3>
+				<br>
+				<h4 class="specialties__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non<br>
+				ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a <br>sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla<br> facilisis semper laoreet.</h4>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Новая секция Contact -->
+<section class="contact__section">
+	<div class="container">
+		<div class="contact__titles">
+			<h2 class="contact__title">CONTACT</h2>
+			<h2 class="contact__suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis<BR> at velit maximus, molestie est a, tempor magna.</h2>
+		</div>
+
+		<div class="contact__form">
+			<form action="#" class="contact__form__inner">
+				<p class="contact__form__block">
+					<input type="text" class="contact__field__set" placeholder="Name">
+					<input type="email" class="contact__field__set" placeholder="Email">
+					<input type="text" class="contact__field__set" placeholder="Phone">
+				</p>
+					<textarea style="overflow:hidden;" placeholder="Message" class="contact__text__area"></textarea>
+				<p class="button__set">
+					<input type="button" class="contact__button" value="SEND MESSAGE">
+				</p>
+
+			</form>
+		</div>
+
+
+	</div>
+</section>
+@@include('_footer.html')
+
+

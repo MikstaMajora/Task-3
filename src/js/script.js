@@ -1,1 +1,1 @@
-@@include("new.js")
+@@include("main.js")
